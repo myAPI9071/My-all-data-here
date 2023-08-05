@@ -1,0 +1,12 @@
+
+
+Fullscreen
+Convert String to Base64 using Salesforce Apex
+Sample Code:
+
+String base64Content = EncodingUtil.Base64Encode( 
+    Blob.valueOf( 'Testing' ) 
+);
+System.debug( 'Base64 Content is ' + base64Content );
+Blob blobContent = EncodingUtil.base64Decode( base64Content );
+System.debug( 'Decoded Base64 value is ' + blobContent.toString() );
